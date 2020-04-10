@@ -1,0 +1,30 @@
+
+.container {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.header {
+    height: var(--lHeaderHeight);
+    line-height: var(--lHeaderHeight);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.logo {
+    height: var(--lABrillHeight);
+}
+
+.projects {
+
+    font-size: var(--gH6Fx);
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--active-color);
+    }
+}
