@@ -24,6 +24,7 @@
   "devDependencies": {},
   "dependencies": {
     "a-bundle": "^1.0.3",
+    "a-floating-colors": "^1.0.2",
     "a-responsive-containers": "^1.0.2",
     "a-responsive-react": "^1.0.2",
     "react": "^16.13.1",

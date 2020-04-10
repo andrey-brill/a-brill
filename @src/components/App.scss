@@ -1,6 +1,8 @@
 
 :root {
-    --text-color: #333333;
+    --black: #131313;
+    --text-color: var(--black);
+    --sub-black: #999999;
     --active-color: #e91e63;
 }
 

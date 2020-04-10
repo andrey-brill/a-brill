@@ -1,0 +1,37 @@
+
+.logotypes {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    text-decoration: none;
+    outline: 0;
+}
+
+.logotype {
+
+    height: var(--g9);
+    margin: 0 var(--g4);
+
+    .shadow {
+        fill: transparent;
+    }
+
+    .background {
+        fill: var(--sub-black);
+    }
+
+    .logo {
+        fill: white;
+    }
+
+    &:hover {
+        .shadow {
+            fill: var(--black);
+        }
+        .background {
+            fill: var(--active-color);
+        }
+    }
+}
