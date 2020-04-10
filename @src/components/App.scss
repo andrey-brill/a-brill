@@ -14,6 +14,10 @@ html, body {
     color: var(--text-color);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 div, span {
     box-sizing: border-box;

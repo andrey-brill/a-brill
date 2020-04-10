@@ -1,4 +1,12 @@
 
 .glasses {
+    height: 120vh;
+    width: 100vw;
+    background: var(--black);
+}
 
+.content {
+    height: 120vh;
+    display: flex;
+    align-items: center;
 }

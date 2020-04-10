@@ -1,7 +1,8 @@
 
-import { React, AFloatingColors } from '../../chunk-e.js';
+import { React } from '../../chunk-e.js';
 
 import style from './ABrillLogo.m.scss';
+import { colorify } from '../../helpers/Colorify.js';
 
 
 const ABrillLogoSvg = React.forwardRef((_props, ref) => (
@@ -27,13 +28,9 @@ export class ABrillLogo extends React.Component {
 
     componentDidMount () {
         const svg = this.svg.current;
-        AFloatingColors.colorify(svg, {
+        colorify(svg, {
             targetId: 'logo',
-            gradientAngle: 175,
-            gradientUseAs: 'stroke',
-            initialColor: '#090909',
-            floatingColors: ['#f44336', '#008cff', '#e91e63', '#008cff'],
-            animationDelay: 1000
+            gradientUseAs: 'stroke'
         });
     }
 
