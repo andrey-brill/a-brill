@@ -1,3 +1,0 @@
-
-
-- Scroll to projects part
