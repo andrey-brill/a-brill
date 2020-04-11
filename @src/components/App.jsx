@@ -1,9 +1,11 @@
 
-import './App.scss';
 import { AResponsiveReact, AResponsiveContainers, ReactDom, React } from '../chunk-e.js';
 import { Header } from './header/Header.jsx';
 import { BusinessCard } from './businessCard/BusinessCard.jsx';
 import { Glasses } from './glasses/Glasses.jsx';
+import { Projects } from './projects/Projects.jsx';
+import { Footer } from './footer/Footer.jsx';
+import './App.scss';
 
 
 const { ResponsiveWindow, ResponsiveElement, ResponsiveContainer } = AResponsiveReact;
@@ -19,6 +21,8 @@ const App = () => (
                 <Header/>
                 <BusinessCard/>
                 <Glasses/>
+                <Projects/>
+                <Footer/>
             </ResponsiveElement>
         </ResponsiveContainer>
     </ResponsiveWindow>

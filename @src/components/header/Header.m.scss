@@ -21,6 +21,10 @@
 
 .projects {
 
+    margin-right: var(--lProjectsMargin);
+    padding-left: var(--gPadding);
+    padding-right: var(--gPadding);
+
     font-size: var(--gH6Fx);
     text-decoration: underline;
     cursor: pointer;

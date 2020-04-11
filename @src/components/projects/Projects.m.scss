@@ -1,0 +1,81 @@
+
+.projects {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.title {
+    font-weight: 500;
+    font-size: var(--gH2Fx);
+    color: var(--active-color);
+    margin-bottom: var(--g6);
+}
+
+.project {
+
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-bottom: var(--g5);
+
+    &.active {
+        color: var(--text-color);
+    }
+
+    &:not(.active) {
+        color: #AAAAAA;
+        cursor: not-allowed;
+    }
+
+    &.solution.active:hover {
+        color: #008cff;
+    }
+    &.vision.active:hover {
+        color: var(--active-color);
+    }
+}
+
+
+.logo {
+
+    margin-right: var(--g5);
+
+    width: var(--lLogotypeSize);
+    max-width: var(--lLogotypeSize);
+    min-width: var(--lLogotypeSize);
+    min-height: var(--lLogotypeSize);
+
+
+
+    svg {
+        width: 100%;
+    }
+}
+
+.details {
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: var(--g2);
+
+    > div:first-child {
+        font-weight: 500;
+        font-size: var(--gH5Fx);
+    }
+
+    > div:last-child {
+        opacity: 0.7;
+        font-size: var(--gH6Fx);
+        font-weight: 300;
+    }
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--g-content-padding-px);
+}
+
+

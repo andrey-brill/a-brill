@@ -3,7 +3,7 @@ import { React } from '../../chunk-e.js';
 import { ABrillLogo } from './ABrillLogo.jsx';
 
 import style from './BusinessCard.m.scss';
-import { Logotypes } from './Logotypes.jsx';
+import { SocialLogotypes } from './SocialLogotypes.jsx';
 
 
 export const BusinessCard = () => (
@@ -13,7 +13,7 @@ export const BusinessCard = () => (
             <a className={style.email} href="mailto:andrey@a-brill.com">andrey@a-brill.com</a>
         </div>
         <div className={style.bottom}>
-            <Logotypes/>
+            <SocialLogotypes/>
         </div>
     </div>
 );
