@@ -38,4 +38,8 @@ const KeyboardTrainerLogo = () => (
   <LogoSvg d="M462,238c0,123.709-100.291,224-224,224S14,361.709,14,238,114.291,14,238,14,462,114.291,462,238ZM409.569,382.073a.063.063,0,0,0-.01-.041m-343.109,0a.06.06,0,0,0-.01.04M409.56,93.93a.06.06,0,0,1-.01.04M57.85,371.14,189,336l49-13.13M287,336l-49-13.13m0,0V153.13m0,0L189,140m49,13.13L287,140l131.15-35.14" />
 );
 
-export { ABrillLogo, PhotographyLogo, FloatingColorsLogo, GalleryLogo, VisionLogo, TiarLogo, KeyboardTrainerLogo };
+const APianoLogo = () => (
+    <LogoSvg d="M238,462C114.3,462,14,361.7,14,238S114.3,14,238,14s224,100.3,224,224S361.7,462,238,462z M111.5,268v154.9 M171.8,240v60M256.1,200v60 M310.3,174v60 M364.5,53.1V208"/>
+)
+
+export { ABrillLogo, PhotographyLogo, FloatingColorsLogo, GalleryLogo, VisionLogo, TiarLogo, KeyboardTrainerLogo, APianoLogo };

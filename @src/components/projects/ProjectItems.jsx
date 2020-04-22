@@ -1,6 +1,6 @@
 
 import { React } from '../../chunk-e.js';
-import { VisionLogo, FloatingColorsLogo, GalleryLogo, TiarLogo, PhotographyLogo, KeyboardTrainerLogo } from './ProjectLogotypes.jsx';
+import { VisionLogo, FloatingColorsLogo, GalleryLogo, TiarLogo, PhotographyLogo, KeyboardTrainerLogo, APianoLogo } from './ProjectLogotypes.jsx';
 
 
 export const ProjectItems = [
@@ -9,6 +9,13 @@ export const ProjectItems = [
         title: 'Tiar',
         description: 'Training in any reality',
         logo: <TiarLogo/>,
+        solution: true
+    },
+    {
+        title: 'A.Piano',
+        description: 'A beautiful piano (HQ, HiRez)',
+        logo: <APianoLogo/>,
+        url: 'https://andrey-brill.github.io/a-piano',
         solution: true
     },
     {

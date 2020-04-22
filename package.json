@@ -21,12 +21,14 @@
     "brill",
     "a-brill"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "a-webpack-configs": "^2.0.19"
+  },
   "dependencies": {
     "a-bundle": "^1.0.3",
     "a-floating-colors": "^1.0.2",
-    "a-responsive-containers": "^1.0.2",
-    "a-responsive-react": "^1.0.2",
+    "a-responsive-containers": "^1.1.0",
+    "a-responsive-react": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

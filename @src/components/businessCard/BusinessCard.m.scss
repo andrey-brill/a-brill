@@ -17,7 +17,7 @@
     left: 0;
     bottom: 0;
 
-    height: 17vh;
+    height: 18vh;
     width: 100vw;
 
     display: flex;
@@ -32,12 +32,12 @@
 
     text-align: center;
     display: block;
-    color: var(--text-color);
+    color: var(--active-color);
     text-decoration: none;
 
     outline: 0;
     &:visited, &:focus {
-        color: var(--text-color);
+        color: var(--active-color);
     }
 
     &:hover {
