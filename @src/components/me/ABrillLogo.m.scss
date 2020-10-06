@@ -1,0 +1,18 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
+
+.logo {
+
+    display: block;
+
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 24px;
+
+    max-width: rw(55);
+
+    height: rh(27);
+    max-height: rh(27);
+
+}

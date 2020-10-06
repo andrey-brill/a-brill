@@ -1,12 +1,44 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
 
 .glasses {
-    height: 102vh;
-    width: 100vw;
+
+    min-height: wh();
+    @include fixedWidth(ww());
+    overflow-x: hidden;
     background: var(--black);
+
 }
 
-.content {
-    height: 102vh;
-    display: flex;
-    align-items: center;
+:global(.desktop) {
+
+    .glasses {
+        display: flex;
+        align-items: center;
+    }
+
+    .top {
+        display: block;
+        max-width: rw(200);
+        margin: auto;
+    }
+
+    .bottom {
+        display: none;
+    }
+
 }
+
+:global(.mobile) {
+
+    .top {
+        margin: wh(25) 0 wh(10) ww(5);
+        @include fixedWidth(ww(180));
+    }
+
+    .bottom {
+        margin: wh(10) 0 wh(25) ww(-90);
+        @include fixedWidth(ww(180));
+    }
+}
+

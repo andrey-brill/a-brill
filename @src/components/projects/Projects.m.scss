@@ -6,7 +6,7 @@
 
 .title {
     font-weight: 500;
-    font-size: var(--gH2Fx);
+    font-size: var(--gH2);
     color: var(--active-color);
     margin-bottom: var(--g6);
 }
@@ -61,12 +61,12 @@
 
     > div:first-child {
         font-weight: 500;
-        font-size: var(--gH5Fx);
+        font-size: var(--gH5);
     }
 
     > div:last-child {
         opacity: 0.7;
-        font-size: var(--gH6Fx);
+        font-size: var(--gH6);
         font-weight: 300;
     }
 }

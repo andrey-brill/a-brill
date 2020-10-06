@@ -1,0 +1,57 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
+
+.container {
+
+    @include fixedSize(ww(), wh());
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    padding-bottom: rh(10);
+
+    svg {
+        margin: 0 auto;
+    }
+}
+
+
+.name {
+    color: var(--text-color);
+    font-size: H1();
+    font-family: var(--jost);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: rh(5) 0;
+}
+
+
+.menu {
+
+    margin-top: rh(15);
+    font-family: var(--montserrat);
+    font-size: H4();
+    font-weight: 300;
+    color: var(--text-color);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: rh(15);
+
+    a {
+        font-size: H3();
+        font-family: var(--jost);
+        font-weight: 500;
+        color: var(--active-color);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

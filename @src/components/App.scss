@@ -1,24 +1,29 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
 
 :root {
     --black: #131313;
     --sub-black: #999999;
-    --text-color: #313131;
+    --text-color: #333333;
     --sub-text-color: var(--sub-black);
     --active-color: #e91e63;
+    --sub-active-color: #6D72C3;
+    --montserrat: 'Montserrat', sans-serif;
+    --jost: 'Jost', sans-serif;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-
-    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
     color: var(--text-color);
+    @include fixedSize(100vw, 100vh);
 }
 
-body {
-    overflow-x: hidden;
+#root {
+    @include fixedSize(ww(), wh());
+    overflow: hidden auto;
 }
-
 
 div, span {
     box-sizing: border-box;
