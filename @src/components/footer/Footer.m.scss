@@ -1,3 +1,5 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
 
 .footer {
 
@@ -5,9 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--montserrat);
+    background: var(--black);
 
-    font-size: var(--gSmall);
+    font-size: T2();
     font-weight: 300;
     color: var(--sub-text-color);
-    height: var(--lFooterHeight);
+    height: rx(96);
 }

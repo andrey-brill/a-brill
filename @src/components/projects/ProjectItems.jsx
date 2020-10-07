@@ -1,50 +1,67 @@
 
-import { React } from '../../chunk-e.js';
-import { VisionLogo, FloatingColorsLogo, GalleryLogo, TiarLogo, PhotographyLogo, ATeacher, APianoLogo } from './ProjectLogotypes.jsx';
-
 
 export const ProjectItems = [
 
     {
-        title: 'Tiar',
-        description: 'Coming soon...',
-        logo: <TiarLogo/>
+        key: 'a-brill',
+        title: 'ABrill',
+        description: 'Own brand design.',
+        url: 'https://a-brill.com'
     },
+
     {
-        title: 'A.Piano',
-        description: 'A beautiful piano (HQ, HiRez)',
-        logo: <APianoLogo/>,
+        key: 'a-gallery',
+        title: 'AGallery',
+        description: 'Artworks with an accent on the artists\' visions.',
+        url: 'https://www.instagram.com/abrill_gallery'
+    },
+
+    {
+        key: 'a-photography',
+        title: 'APhotography',
+        description: 'Digital journey through my memories.',
+        url: 'https://www.instagram.com/abrill_photography'
+    },
+
+    {
+        key: 'a-vision',
+        title: 'AVision',
+        description: 'Art photography.',
+        url: 'https://www.instagram.com/abrill_vision'
+    },
+
+    {
+        key: 'a-piano',
+        title: 'APiano',
+        description: 'A beautiful virtual high quality piano.',
         url: 'https://andrey-brill.github.io/a-piano'
     },
+
     {
-        title: 'A.Teacher',
+        key: 'a-chess',
+        title: 'AChess',
+        description: 'Android app with modern chess puzzles.',
+        url: 'https://play.google.com/store/apps/details?id=com.abrill.achess'
+    },
+
+    {
+        key: 'a-teacher',
+        title: 'ATeacher',
         description: 'Listen. Type. Learn.',
-        logo: <ATeacher/>,
         url: 'https://andrey-brill.github.io/a-teacher'
     },
-    {
-        title: 'Floating colors',
-        description: 'Adding SMIL animation to SVG',
-        logo: <FloatingColorsLogo/>,
-        url: 'https://github.com/andrey-brill/a-floating-colors'
-    }
 
-    // {
-    //     title: 'Photography',
-    //     description: 'Coming soon...', // "Journey through my memories",
-    //     logo: <PhotographyLogo/>,
-    //     solution: false
-    // },
-    // {
-    //     title: 'Vision',
-    //     description: 'Coming soon...', // 'World through me',
-    //     logo: <VisionLogo/>,
-    //     solution: false
-    // },
-    // {
-    //     title: 'Gallery',
-    //     description: 'Gallery of inspirational art',
-    //     logo: <GalleryLogo/>,
-    //     solution: false
-    // }
+    {
+        key: 'a-floating-colors',
+        title: 'AFloatingColors',
+        description: 'JS-library for adding SMIL animation to SVG elements.',
+        url: 'https://github.com/andrey-brill/a-floating-colors'
+    },
+
+    {
+        key: 'a-chrome-extensions',
+        title: 'AExtensions',
+        description: 'Useful extensions for the Chrome browser.',
+        url: 'https://chrome.google.com/webstore/search/ABrill?hl=en&_category=extensions'
+    }
 ];

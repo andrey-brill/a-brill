@@ -2,7 +2,6 @@
 import { React } from '../../chunk-e.js';
 
 import style from './Glasses.m.scss';
-import { Content } from '../Content.jsx';
 
 
 const GlassesSvg = React.forwardRef((props, ref) => (

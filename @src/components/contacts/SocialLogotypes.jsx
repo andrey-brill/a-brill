@@ -7,8 +7,6 @@ import style from './SocialLogotypes.m.scss';
 const LogotypeLink = ({ href, d }) => (
     <a className={style.link} href={href} target="_blank">
         <svg className={style.logotype} viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-            <path className={style.shadow} d="M492.3,443.1c0,34.2-27.7,61.9-61.9,61.9H80.7c-34.2,0-61.9-27.7-61.9-61.9V93.4c0-34.2,27.7-61.9,61.9-61.9h349.7c34.2,0,61.9,27.7,61.9,61.9L492.3,443.1L492.3,443.1z"/>
-            <path className={style.background} d="M492.3,418.4c0,34.2-27.7,61.9-61.9,61.9H80.7c-34.2,0-61.9-27.7-61.9-61.9V68.6c0-34.2,27.7-61.9,61.9-61.9h349.7c34.2,0,61.9,27.7,61.9,61.9L492.3,418.4L492.3,418.4z"/>
             <path className={style.logo}  d={d}/>
         </svg>
     </a>

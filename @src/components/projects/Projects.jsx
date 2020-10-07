@@ -1,26 +1,17 @@
 
-import { React, AResponsiveReact } from '../../chunk-e.js';
+import { React } from '../../chunk-e.js';
 import { ProjectItems } from './ProjectItems.jsx';
 import { Content } from '../Content.jsx';
-import { PROJECTS_ID, HEADER_HEIGHT } from '../../helpers/Constants.js';
+import { ProjectLogoSvg } from './ProjectLogotypes.jsx';
+import { PROJECTS_ID } from '../../helpers/Constants.js';
 
 import style from './Projects.m.scss';
 
 
-function projectClassName ({ solution, url }) {
-    const classNames = [ style.project ];
-    classNames.push((solution ? style.solution: style.vision));
-    if (url) {
-        classNames.push(style.active);
-    }
-    return classNames.join(' ');
-}
-
-
 const ProjectItem = ({ project }) => (
-  <a className={projectClassName(project)} href={project.url} target="_blank">
+  <a className={style.project} href={project.url} target="_blank">
     <div className={style.logo} >
-      <div>{project.logo}</div>
+      <div><ProjectLogoSvg projectKey={project.key}/></div>
     </div>
     <div className={style.details}>
       <div>{project.title}</div>
@@ -34,15 +25,11 @@ const ProjectItem = ({ project }) => (
   </a>
 );
 
-const ro = {
-    lLogotypeSize: HEADER_HEIGHT,
-};
-
 export const Projects = () => (
-  <AResponsiveReact.ResponsiveElement id={PROJECTS_ID} className={style.projects} roCreator={ro}>
+  <div id={PROJECTS_ID} className={style.projects}>
     <Content>
       <div className={style.title}>Projects</div>
-      { ProjectItems.map( (project, key) => (<ProjectItem key={key} project={project} />)) }
+      { ProjectItems.map( (project) => (<ProjectItem key={project.key} project={project} />)) }
     </Content>
-  </AResponsiveReact.ResponsiveElement>
+  </div>
 );

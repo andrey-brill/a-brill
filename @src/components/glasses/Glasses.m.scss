@@ -3,7 +3,7 @@
 
 .glasses {
 
-    min-height: wh();
+    min-height: wh(120);
     @include fixedWidth(ww());
     overflow-x: hidden;
     background: var(--black);

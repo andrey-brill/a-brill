@@ -1,14 +1,17 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
 
 .projects {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    padding-top: rh(15);
+    padding-bottom: rh(25);
 }
 
 .title {
     font-weight: 500;
-    font-size: var(--gH2);
+    font-size: H2();
+    font-family: var(--jost);
     color: var(--active-color);
-    margin-bottom: var(--g6);
+    margin-bottom: rx(50);
 }
 
 .project {
@@ -16,21 +19,14 @@
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    margin-bottom: var(--g5);
+    margin-bottom: rx(30);
+    color: var(--text-color);
 
-    &.active {
-        color: var(--text-color);
+    &:not(:hover) .arrow {
+        opacity: 0;
     }
 
-    &:not(.active) {
-        color: #AAAAAA;
-        cursor: not-allowed;
-    }
-
-    &.solution.active:hover {
-        color: #008cff;
-    }
-    &.vision.active:hover {
+    &:hover {
         color: var(--active-color);
     }
 }
@@ -38,14 +34,10 @@
 
 .logo {
 
-    margin-right: var(--g5);
+    margin-right: rx(15);
 
-    width: var(--lLogotypeSize);
-    max-width: var(--lLogotypeSize);
-    min-width: var(--lLogotypeSize);
-    min-height: var(--lLogotypeSize);
-
-
+    @include fixedWidth(rx(100));
+    min-height: rx(35);
 
     svg {
         width: 100%;
@@ -57,25 +49,37 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-top: var(--g2);
+    padding-top: rx(8);
 
     > div:first-child {
         font-weight: 500;
-        font-size: var(--gH5);
+        font-size: H5();
+        font-family: var(--jost);
     }
 
     > div:last-child {
+        font-family: var(--montserrat);
         opacity: 0.7;
-        font-size: var(--gH6);
+        font-size: T1();
         font-weight: 300;
     }
 }
 
 .arrow {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: var(--g-content-padding-px);
+    width: rx(45);
+
+    svg {
+        fill: currentColor;
+    }
+
 }
 
-
+:global(.mobile) {
+    .arrow {
+        display: none;
+    }
+}

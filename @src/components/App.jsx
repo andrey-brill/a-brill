@@ -5,6 +5,7 @@ import { Me } from './me/Me.jsx';
 import { Glasses } from './glasses/Glasses.jsx';
 import { Projects } from './projects/Projects.jsx';
 import { Footer } from './footer/Footer.jsx';
+import { Contacts } from './contacts/Contacts.jsx';
 
 import './App.scss';
 
@@ -32,6 +33,7 @@ const App = () => (
                 <Me/>
                 <Glasses/>
                 <Projects/>
+                <Contacts/>
                 <Footer/>
             </ResponsiveElement>
         </ResponsiveContainer>

@@ -1,0 +1,32 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
+
+.logotypes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.link {
+    text-decoration: none;
+    outline: 0;
+}
+
+.logotype {
+
+    height: rx(70);
+    background: var(--active-color);
+    border-radius: 1000px;
+
+    &:hover {
+        background: white;
+        .logo {
+            fill: var(--active-color);
+        }
+    }
+
+    .logo {
+        fill: white;
+    }
+
+}

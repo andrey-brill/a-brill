@@ -1,0 +1,41 @@
+@import 'a-responsive-containers/entry/responsive.scss';
+
+
+.contacts {
+
+    background: var(--black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: wh(100);
+}
+
+.email {
+    font-weight: 500;
+    font-size: H3();
+    font-family: var(--jost);
+    margin-bottom: rx(50);
+    text-decoration: none !important;
+    padding-top: rh(25);
+    margin-bottom: rh(15);
+    display: block;
+
+    color: white;
+
+    span {
+        font-family: var(--montserrat);
+        font-size: H3();
+        color: var(--active-color);
+    }
+
+    &:hover {
+        color: var(--active-color);
+
+        span {
+            color: white;
+        }
+    }
+}
+
