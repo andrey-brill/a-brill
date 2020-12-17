@@ -27,7 +27,7 @@ export const ProjectItems = [
         key: 'a-teacher',
         title: 'ATeacher',
         description: 'Listen. Type. Learn.',
-        url: 'https://andrey-brill.github.io/a-teacher'
+        url: 'https://ateacher.xyz'
     },
 
     {
